@@ -4,8 +4,10 @@ from tensorflow.keras.preprocessing import image
 import numpy as np
 import os
 
-# Load your trained model
+from keras.models import load_model  # or tensorflow.keras.models
+
 model = load_model("brain_tumor_classifier.keras")
+
 
 # Define class labels
 class_labels = ['Glioma', 'Meningioma', 'No Tumor', 'Pituitary']
