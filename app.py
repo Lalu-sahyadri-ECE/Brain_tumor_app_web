@@ -5,7 +5,7 @@ import numpy as np
 import os
 
 # Load your trained model
-model = load_model("brain_tumor_classifier.h5")
+model = load_model("brain_tumor_classifier.keras")
 
 # Define class labels
 class_labels = ['Glioma', 'Meningioma', 'No Tumor', 'Pituitary']
